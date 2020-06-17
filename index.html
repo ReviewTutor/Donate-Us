@@ -1,6 +1,269 @@
 <!DOCTYPE html>
   <html>
-  <title>Donate Us!</title>
-  <style>
-  
-  </style>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+      <title>Donate Us!</title>
+    </head>
+    <style>
+          section {
+                color: white;
+                border-radius: 0.5em;
+                padding: 0.5em;
+                position: absolute;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%) }
+            header {
+                background-color: rgb(219, 219, 219);	
+                color: #ddd;
+                padding: 20px;
+                text-align: center;
+                width: 100%;
+                height: 125px;
+                content: '';
+                display: inline-block;
+                vertical-align: middle;  
+            }
+            footer {
+                background-color: rgb(50,50,50);	
+                color: #ddd;
+                padding: 20px;
+                text-align: center;
+                width: 100%;
+                position: relative;
+                bottom: 0;
+                height: 80px;
+                margin-bottom: -80px;
+                content: '';
+                display: inline-block;
+                vertical-align: middle; 
+            }
+            main {
+                width: 100%;
+                margin: 0 auto;
+                min-height: calc(-185vh - 125px - 60px);
+
+            }
+           
+            .container{
+                width:70%;
+                margin: 20px auto;
+                overflow:auto;
+                height:100%;
+            }
+                @media only screen and (max-width: 900px){
+                .container{
+                width:100%;
+                }
+            }
+            body {
+               background-image: url('https://user-images.githubusercontent.com/66401205/84818636-cf16be80-afe4-11ea-8d3b-436b17f5f9f7.png');
+               background-repeat: no-repeat;
+               background-size:cover;
+                font-family: 'Hind Madurai', sans-serif;
+                margin: 0px;
+                padding:0px;
+                padding-bottom:40px;
+                height:100%;
+            }
+            
+            h1 { 
+                color: rgb(255, 255, 255);
+                font-family: Arial, Helvetica, sans-serif
+                
+                
+            }
+            h3 {
+                color: rgb(219, 219, 219);
+            }
+            h2 {
+                color: rgb(219, 219, 219);
+            }
+            h4 {
+                color: white
+            }
+            p {
+                color: rgb(255, 255, 255);
+            }
+          
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #464646;
+                width: 100%;
+            }
+            nav {
+                border-radius: 4px;
+                box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+                color: rgb(73, 73, 73);
+                display: block;
+                margin: 8px 22px 8px 22px;
+                overflow: hidden;
+                width: 100%; 
+                margin: 0;
+                padding: 0;
+            }
+            
+            li {
+            float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #111111;
+            }
+            
+            
+            .button {
+                font:  15px Arial, Helvetica, sans-serif;
+                text-decoration: none;
+                background-color: #EEEEEE;
+                color: #333333;
+                padding: 2px 6px 2px 6px;
+                border-top: 1px solid #CCCCCC;
+                border-right: 1px solid #333333;
+                border-bottom: 1px solid #333333;
+                border-left: 1px solid #CCCCCC;
+                }
+            
+            *{
+             box-sizing: border-box;
+             }
+            /* Create three unequal columns that floats next to each other */
+            .column {
+            float: left;
+            padding: 10px;
+           
+            }
+            .left, .right {
+            width: 25%;
+            height: 100%;
+            }
+            .middle {
+            width: 50%;
+            height: 100%;
+            }
+            /* Go below floats after the columns */
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+            vertical-menu {
+            width: 200px;
+            }
+            .vertical-menu a {
+            background-color: #eee;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            }
+            .vertical-menu a:hover {
+            background-color: #ccc;
+            }
+
+             .logo {
+                 text-indent: 0px;
+                 background: url('logo.png');
+                 background: url('https://user-images.githubusercontent.com/66401205/83921317-192db380-a74c-11ea-9cca-667b7c7eb65d.png');
+                 height: 85px;
+                 width: 155px;
+                 margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+               
+               input[type=text], select {
+                width: 70%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid black;
+                border-radius: 4px;
+                box-sizing: border-box;
+                background-color: rgb(23, 164, 219);
+                }
+
+                input[type=email], select {
+                width: 70%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid black;
+                border-radius: 4px;
+                box-sizing: border-box;
+                background-color: rgb(23, 164, 219);
+                }
+
+                textarea {
+                width: 70%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid black;
+                border-radius: 4px;
+                box-sizing: border-box;
+                background-color: rgb(23, 164, 219);
+
+                }
+
+                input[type=submit] {
+                width: 70%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                }
+
+                input[type=submit]:hover {
+                background-color: #45a049;
+                }
+                .donate {
+                    background-color: rgb(73, 73, 73);
+                    width: 50%;
+                    margin-left: 25%;
+                    border-radius: 20px;
+                    color: #CCCCCC;
+                    border: 2px solid black;
+                }
+
+        </style>
+    </head>
+    
+    <body>		
+		<header class="container-fluid">
+            <h1 class= "logo"></h1>
+	    </header>
+        <nav class="container-fluid">
+            <ul class="horizontal">
+                <li class="horizontal"><a class="active" href="https://reviewtutor.github.io">Home</a></li>
+                <li class="horizontal"><a href="https://reviewtutor.github.io/submissions/">Submissions</a></li>
+                <li class="horizontal"><a href="https://reviewtutor.github.io/contact/">Contact</a></li>
+              <li class="horizontal"><a href="https://reviewtutor.github.io/donate/">Donate</a><li>
+                <li class="rightli horizontal" style="float:right"><a href="https://reviewtutor.github.io/about/">About</a></li>
+            </ul>
+        </nav>
+       <br>
+        </style>
+        <div class="donate">
+          <center>
+             <h1>Donate Us!</h1>
+                <p> Review Tutor is a <strong> nonprofit organization </strong>. If you want to help us make the website the best it can be, then you can support us by making a small donation. If you choose to donate, <em>please send your donation by email</em>. Our email is reviewtutors@gmail.com. We appreciate every donation that you all make, and it really helps us out. Thank you for all your support. <br>
+                    -ReviewDevs
+          </center>
+        </div>
+        </body>
+</html>
